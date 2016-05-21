@@ -14,7 +14,10 @@ while another_page
 	page.search('.result').map do |c|					# block that holds the company name
 		name = c.search('.company').text.strip			# the company name itself
 		location = c.search('.location').text.strip		# location name, used primarily for testing
-		resultsarray << [name, location]
+
+		unless resultsarray.include? [name, location]	# checks if the entry is already in array
+			resultsarray << [name, location]
+		end
 	end
 	
 	# checks if there is another page - defaults to stop the loop 
