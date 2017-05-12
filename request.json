@@ -1,0 +1,8 @@
+{
+  "range": "Sheet1!A1:B1",
+  "majorDimension": "ROWS",
+  "values": [
+    ["Money Penny", "Secretary"],
+    ["Felix Lighter","American BFF"],
+  ],
+}
